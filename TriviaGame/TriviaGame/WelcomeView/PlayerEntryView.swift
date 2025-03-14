@@ -32,11 +32,13 @@ struct PlayerEntryView: View {
             .foregroundColor(.white)
 
             TextField("Player 1 Name", text: $viewModel.player1Name)
+                .autocorrectionDisabled()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 200)
                 .padding()
 
             TextField("Player 2 Name", text: $viewModel.player2Name)
+                .autocorrectionDisabled()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 200)
                 .padding()
