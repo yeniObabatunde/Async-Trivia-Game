@@ -112,15 +112,14 @@ class TriviaGameViewModel: ObservableObject {
             print("Error: player1Time or player2Time is nil!")
             return nil
         }
-        
-        if player1Correct && player2Correct {
-            return p1Time < p2Time ? player1Name : (p2Time < p1Time ? player2Name : nil)
-        } else if player1Correct {
+        if player1Correct && !player2Correct {
             return player1Name
-        } else if player2Correct {
+        } else if !player1Correct && player2Correct {
             return player2Name
         }
-        
+        else if player1Correct && player2Correct {
+            return p1Time < p2Time ? player1Name : (p2Time < p1Time ? player2Name : nil)
+        }
         return nil
     }
     
@@ -130,7 +129,6 @@ class TriviaGameViewModel: ObservableObject {
             player2ConsecutiveWins = 0
             return
         }
-        
         playerScores[roundWinner, default: 0] += 1
         
         if roundWinner == player1Name {
