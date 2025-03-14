@@ -68,7 +68,7 @@ struct TriviaGameView: View {
                 .keyboardType(.numberPad)
             
             Button(action: {
-                viewModel.submitAnswer(answer: Int(answerInput) ?? 0)
+                viewModel.submitAnswer(answer: Double(answerInput) ?? 0.0)
                 answerInput = ""
             }) {
                 Text("Submit Answer")

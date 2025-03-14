@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		58B61DDE2D84E54B0079FEFF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 58B61DDD2D84E54B0079FEFF /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		58B61DAD2D84B30E0079FEFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B61DDE2D84E54B0079FEFF /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TriviaGame;
 			packageProductDependencies = (
+				58B61DDD2D84E54B0079FEFF /* IQKeyboardManagerSwift */,
 			);
 			productName = TriviaGame;
 			productReference = 58B61D9C2D84B30B0079FEFF /* TriviaGame.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 58B61D932D84B30B0079FEFF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				58B61DDC2D84E54B0079FEFF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 58B61D9D2D84B30B0079FEFF /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58B61DDC2D84E54B0079FEFF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58B61DDD2D84E54B0079FEFF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B61DDC2D84E54B0079FEFF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B61D942D84B30B0079FEFF /* Project object */;
 }

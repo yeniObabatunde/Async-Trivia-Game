@@ -67,11 +67,11 @@ class TriviaGameViewModel: ObservableObject {
         isTimerRunning = false
     }
     
-    func submitAnswer(answer: Int) {
+    func submitAnswer(answer: Double) {
         guard let currentQuestion = currentQuestion else { return }
         
         stopTimer()
-        let correct = answer == Int(currentQuestion.answer)
+        let correct = answer == currentQuestion.answer
         
         if player1Turn {
             player1Time = timerCount
